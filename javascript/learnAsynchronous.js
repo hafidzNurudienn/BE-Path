@@ -28,7 +28,6 @@ async function traktirMakan() {
     console.log(error); //Belum ada uanggg, gajadi traktir makan
   }
 }
-
 traktirMakan();
 
 //Trying setTimeout using arrow function
