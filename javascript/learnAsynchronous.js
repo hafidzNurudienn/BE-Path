@@ -47,3 +47,8 @@ berhasil = () => {
 };
 
 berhasil();
+
+async function beray() {
+  const api = await fetch("https://api.github.com/users/");
+  console.log(api);
+}
