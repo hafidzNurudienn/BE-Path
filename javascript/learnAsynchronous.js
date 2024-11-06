@@ -22,7 +22,7 @@ async function traktirMakan() {
 
   try {
     if (!adaUang) throw "Belum ada uanggg, gajadi traktir makan";
-    let pesan = await janjiTraktir;
+    let pesan = janjiTraktir;
     console.log(pesan); //"Traktir Makan!!"
   } catch (error) {
     console.log(error); //Belum ada uanggg, gajadi traktir makan
@@ -30,3 +30,20 @@ async function traktirMakan() {
 }
 
 traktirMakan();
+
+//Trying setTimeout using arrow function
+setTimeout(() => {
+  console.log("Hello");
+}, 3000); //3000 miliseconds
+
+//Dalam bentuk function biasa
+setTimeout(function () {
+  console.log("Hello");
+}, 4000);
+
+//Trying callback
+berhasil = () => {
+  console.log("Berhasil cuyy");
+};
+
+berhasil();
